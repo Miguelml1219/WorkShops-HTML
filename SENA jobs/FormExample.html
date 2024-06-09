@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcout icon" href="Imgs/formulario-de-contacto1.png">
+    <title>Forms</title>
+</head>
+<style>
+    body{
+        font-family: Bahnschrift Condensed;color: gainsboro;
+        background-color: darkgrey;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(Imgs/desktop-wallpaper-color-gradient-green-and-blue-gradient.jpg);   
+    }
+</style>
+
+<body>
+    <div>
+        <center>
+            <h1 style="color: gainsboro; font-size: 70px;padding-top: 5;margin-top: 1;margin-bottom: 15px;user-select: none;">Forms</h1>
+            <hr width="1300px" noshade="", size="10px", color="lightgreen", padding-top: 20, style="border-radius: 30px;">
+        </center>
+        <br>
+        <br>
+
+    <center>
+    <form id='send' style="font-size: 25px;">
+        <label for="emails">Emails:</label><br>
+        <select id="emails" name="emails"style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;">
+        <option value="email1@example.com">email1@example.com</option>
+        <option value="email2@example.com">email2@example.com</option>
+        <option value="email3@example.com">email3@example.com</option>
+        <option value="email4@example.com">email4@example.com</option>
+        <option value="email5@example.com">email5@example.com</option>
+        <option value="email6@example.com">email6@example.com</option>
+        </select><br><br>
+
+        <label for="paises">Countries:</label><br>
+        <select id="paises" name="paises"style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;">
+            <optgroup label="America">
+                <option value="argentina">Argentina</option>
+                <option value="brazil">Brazil</option>
+                <option value="canada">Canada</option>
+                <option value="UnitedStates">United States</option>
+                <option value="mexico">Mexico</option>
+                
+            </optgroup>
+            <optgroup label="Europe">
+                <option value="Germany">Germany</option>
+                <option value="Spain">Spain</option>
+                <option value="France">France</option>
+                <option value="Italy">Italy</option>
+                <option value="UnitedKingdom">United Kingdom</option>
+                
+            </optgroup>
+        </select><br><br>
+        <label for="User">User:</label><br>
+        <input type="text" id="User" name="User"style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;"><br>
+        <br>
+        <label for="ques">Capital of Germany?</label><br>
+        <br>
+        <input type="radio" id="ans1" name="ans" value="paris">
+        <label for="ans1">Paris</label><br>
+
+        <input type="radio" id="ans2" name="ans" value="berlin">
+        <label for="ans2">Berlin</label><br>
+
+        <input type="radio" id="ans3" name="ans" value="londres">
+        <label for="ans3">London</label><br>
+        <br>
+
+        <label for="file1">File 1:</label><br>
+        <input type="file" id="file1" name="file1"style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;"><br><br>
+
+        <label for="file2">File 2:</label><br>
+        <input type="file" id="file2" name="file2"style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;"><br>
+        <br>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" maxlength="40" required style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;"><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="0" max="999" required style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;"><br>
+
+        <label for="id">ID:</label><br>
+        <input type="text" id="id" name="is" maxlength="8" required style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;"><br>
+        <br>
+
+        <!-- Textarea -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" value="Example Text" readonly style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;"><br>
+
+        <label for="key">Contraseña:</label><br>
+        <input type="password" id="key" name="key" value="password123" readonly style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;"><br>
+
+        <label for="comentario">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50" readonly style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;">Example of Text Textarea</textarea><br>
+        <!-- Textarea -->
+        <br>
+        <input type="Submit" value="Submit" style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 30px;background-color: skyblue; cursor: pointer;" onclick="sendData()">
+
+    </form>
+    </div>
+
+    <script>
+        sendData()
+        {           
+            var send = document.getElementById("send").value;
+            document.getElementById("send").value = "";
+        }
+    
+    </script>
+</center>
+    
+</body>
+</html>

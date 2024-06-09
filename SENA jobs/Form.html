@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcout icon" href="Imgs/formulario-de-contacto.png">
+    <title>Form</title>
+</head>
+<style>
+    body{
+        font-family: Bahnschrift Condensed;color: gainsboro;
+        background-color: darkgrey;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(Imgs/depositphotos_83819542-stock-photo-blue-gradient-background-abstract-illustration.jpg);   
+    }
+</style>
+
+<body>
+    <div>
+        <center>
+            <h1 style="color: gainsboro; font-size: 70px;padding-top: 5;margin-top: 1;margin-bottom: 15px;user-select: none;">Complete this Form</h1>
+            <hr width="1300px" noshade="", size="10px", color="skyblue", padding-top: 20, style="border-radius: 30px;">
+        </center>
+        <br>
+        <br>
+
+    <center>
+    <form id='send' style="font-size: 25px;">
+        <label for="Email">E-mail address:</label>
+        <input type="Email"style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;" placeholder="someone@domain.com"required><br>
+        <br>
+        <label for="clave">Password:</label>
+        <input type="password" name="clave"style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;"><br><br>
+        <label for="movie">Movies:</label><br><br>
+        <label> The Godfather <input type="checkbox"><br>Titanic <input type="checkbox"><br>Forrest Gump <input type="checkbox"><br>The Lion King  <input type="checkbox"><br>E.T. The Extra-Terrestrial <input type="checkbox"></label><br><br>
+        <label for="SO">Which operating system you use more? </label><br>
+        <select id="SO" name="SO"style="border-radius: 7px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;">
+            <option value="Windows">Windows</option>
+            <option value="Linux">Linux</option>
+        </select>
+        <br>
+        <br>
+        <label for="Name">Full Name</label>
+        <input type="Text" style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;" id="Name" placeholder="e.g: Cillian Murphy"required><br><br>
+        <label for="Site"> Rate this website </label><br>
+        <select id="Site" name="Site"style="border-radius: 7px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;">
+            <option value="Excellent">Excellent</option>
+            <option value="Very Good">Very Good</option>
+            <option value="Good">Good</option>
+            <option value="Fair">Fair</option>
+            <option value="Poor">Poor</option>
+        </select><br><br>
+        <label for="Name">Full Name</label>
+        <input type="Text" style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;" id="Name" placeholder="e.g: Steve Jobs"required><br><br>
+        <label for="Email">E-mail address:</label>
+        <input type="Email"style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;" placeholder="someone@domain.com"required><br><br>
+        <label for="ID">ID:</label>
+        <input type="text"style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;" placeholder="e.g: 1114356209"required><br><br>
+        <label for="Curriculum">Curriculum:</label><br><br>
+        <textarea id="Curriculum" name="Curriculum" rows="7" cols="80"style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 20px;background-color: silver;"></textarea> <br><br>
+    
+        <input type="Submit" value="Submit" style="border-radius: 10px; font-family: Bahnschrift Condensed;font-size: 30px;background-color: skyblue; cursor: pointer;" onclick="sendData()">
+
+    </form>
+    </div>
+
+    <script>
+        sendData()
+        {           
+            var send = document.getElementById("send").value;
+            document.getElementById("send").value = "";
+        }
+    
+    </script>
+</center>
+    
+</body>
+</html>
